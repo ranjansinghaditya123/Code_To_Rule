@@ -83,6 +83,47 @@ class _AboutState extends State<About> {
                 color: Colors.red,
               ),
             ),
+            Container(
+              margin: EdgeInsets.fromLTRB(50,10,50,10),
+              child: Text('Code to rule aims to rule customers heart by bringing their fascinations to'
+                  ' reality by designing and coding whatever they desire and then present to them '
+                  'their website and apps in minimum shortest time possible. '
+                  'We value our customers their satisfaction is our success. We try to bring our services at minimum price'
+                  'You can also contact us through our contact us page.'
+                  'Feel free to dream we coders are there to shape your imagination into reality through our highly efficient programming skills. ',style: TextStyle(
+                fontSize: 20,
+              ),),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(50,0,50,10),
+              child: Text('Email : codetoorule@gmail.com',style: TextStyle(
+                fontSize: 30,
+              ),),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(50,0,50,10),
+              child: Text('Phone : +91 8250641627 / +91 7001089091',style: TextStyle(
+                fontSize: 30,
+              ),),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(50,0,50,10),
+              child: Text('Whatsapp : +91 7001089091 / +91 9734293496 ',style: TextStyle(
+                fontSize: 30,
+              ),),
+            ),
+            Container(
+              margin: EdgeInsets.fromLTRB(0,10, 30, 10),
+              height: 50,
+              width: 200,
+              decoration: BoxDecoration(
+                  color: Colors.red[900],
+                  borderRadius: BorderRadius.circular(25)
+              ),
+              child: FlatButton(
+                child: Text('Learn More',style:TextStyle(color: Colors.white),),
+              ),
+            )
           ],
         ),
       ),

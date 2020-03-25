@@ -82,6 +82,71 @@ class _ServicesState extends State<Services> {
                 color: Colors.red,
               ),
             ),
+            Container(
+              margin: EdgeInsets.fromLTRB(50, 10, 50, 10),
+              child: Row(
+                children: <Widget>[
+                  Expanded(
+                    child: ListTile(
+                    title: Container(
+                      margin: EdgeInsets.all(10),
+                        child: Text('Website Development',style: TextStyle(color: Colors.black,fontSize: 25),)),
+                    subtitle: Column(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Text('We design both static and dynamic websites for a very genuine price.'
+                            'Websites designed by us always have a standard user interface and are robust and highly'
+                            'efficient and compatible for every screen size. We design a variety of websites'
+                            'and at the same time we provide website / App maintenance services, and even provide hosting services. '),
+                        Container(
+                          margin: EdgeInsets.fromLTRB(0,10, 30, 10),
+                          height: 50,
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.red[900],
+                              borderRadius: BorderRadius.circular(25)
+                          ),
+                          child: FlatButton(
+                            child: Text('Learn More',style:TextStyle(color: Colors.white),),
+                          ),
+                        )
+                      ],
+                    ),
+                  ),
+                  ),
+                  Expanded(
+                    child: ListTile(
+                      title: Container(
+                          margin: EdgeInsets.all(10),
+                          child: Text('Mobile Application Development',style: TextStyle(color: Colors.black,fontSize: 25),)),
+                      subtitle: Column(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Text('We develop mobile applications for both ios and Android platform.'
+                              'We design user interfaces,front end as well as backend, admin panel and a'
+                              'fully functional apps. We even  post the apps on Google playstore for the customers'
+                              'and at the same time we provide website / App maintenance services, and even provide hosting services.'),
+                          Container(
+                            margin: EdgeInsets.fromLTRB(0,10, 30, 10),
+                            height: 50,
+                            width: 200,
+                            decoration: BoxDecoration(
+                                color: Colors.red[900],
+                                borderRadius: BorderRadius.circular(25)
+                            ),
+                            child: FlatButton(
+                              child: Text('Learn More',style:TextStyle(color: Colors.white),),
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
