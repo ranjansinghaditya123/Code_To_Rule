@@ -16,22 +16,23 @@ class _PortFolioState extends State<PortFolio> {
       appBar: AppBar(
         backgroundColor: Colors.grey[50],
         actions: <Widget>[
-          Expanded(
-            child: FlatButton(
-              onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()),);
-              },
-              child: Image(
+          Container(
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              image: DecorationImage(
                 image: AssetImage('images/logo.png'),
+                fit: BoxFit.cover,
               ),
             ),
+            child: null /* add child content here */,
           ),
           Expanded(
             child: FlatButton(
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) =>About()),);
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>HomePage()),);
               },
-              child: Text('ABOUT',style:TextStyle(color: Colors.black),),
+              child: Text('Home',style:TextStyle(color: Colors.black),),
             ),
           ),
           Expanded(
@@ -39,15 +40,15 @@ class _PortFolioState extends State<PortFolio> {
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) =>Services()),);
               },
-              child: Text('SERVICES',style:TextStyle(color: Colors.black),),
+              child: Text('Book Reviews',style:TextStyle(color: Colors.black),),
             ),
           ),
           Expanded(
             child: FlatButton(
               onPressed: (){
-                Navigator.push(context, MaterialPageRoute(builder: (context) => PortFolio()),);
+                Navigator.push(context, MaterialPageRoute(builder: (context) => About()),);
               },
-              child: Text('PORTFOLIO',style:TextStyle(color: Colors.black),),
+              child: Text('About',style:TextStyle(color: Colors.black),),
             ),
           ),
           Expanded(
@@ -55,7 +56,7 @@ class _PortFolioState extends State<PortFolio> {
               onPressed: (){
                 Navigator.push(context, MaterialPageRoute(builder: (context) =>ContactUs()),);
               },
-              child: Text('CONTACTUS',style:TextStyle(color: Colors.black),),
+              child: Text('Contact',style:TextStyle(color: Colors.black),),
             ),
           ),
         ],
